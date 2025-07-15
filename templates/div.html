@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Division calculator</title>
+    <link rel="icon" type="image/x-icon" href="https://tse3.mm.bing.net/th/id/OIP.NccxGTExGA40KjW-K9EAbwHaH9?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+</head>
+<body>
+   <h1 style="text-align: center;">Division</h1> 
+   <hr>
+    <feildset>
+        <form method="POST">
+            <label>Enter 1st number:</label><br>
+            <input type="number" name="num1" required><br><br>
+            <label>Enter 2nd number:</label><br>
+            <input type="number" name="num2" required><br><br>
+            <button type="submit">Calculate</button>
+
+            <a href="http://127.0.0.1:5000">
+                <button type="button">Back</button>
+            </a>
+        </form>
+            {% if result %}
+                <h3>{{result}}</h3>
+            {% endif %}
+
+            {% if error %}
+                <h3>{{error}}</h3>
+            {% endif %}
+        <br><br>
+    </feildset>
+</body>
+</html>

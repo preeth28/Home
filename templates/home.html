@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    
+</head>
+<body>
+    <h1>Select an Operation</h1>
+
+    <form id="operationForm">
+        <label>
+            <input type="radio" name="operation" value="add" required>
+            Addition
+        </label><br><br>
+        <label>
+            <input type="radio" name="operation" value="sub" required>
+            Subtraction
+        </label><br><br>
+        <label>
+            <input type="radio" name="operation" value="mul" required>
+            Multiplication
+        </label><br><br>
+        <label>
+            <input type="radio" name="operation" value="div" required>
+            Division
+        </label><br><br>
+        <label>
+            <input type="radio" name="operation" value="cutoff" required>
+            Cutoff calculator
+        </label>
+
+        <br><br>
+        
+            <button type="submit">Go</button>
+        
+    </form>
+    <script>
+        document.getElementById('operationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const op = document.querySelector('input[name="operation"]:checked').value;
+            window.location.href = op;
+        });
+    </script>
+</body>
+</html>

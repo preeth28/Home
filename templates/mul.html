@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport">
-    <title>Addition calci</title>
-    <link rel="icon" type="iamge/x-icon" href="https://webstockreview.net/images/addition-clipart-icon-9.png">
+    <title>multiplication calci</title>
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-multiply-icon-png-image_4869139.jpg">
 </head>
     <body>
-        <h1 style="text-align: center;"><i>Addition calculator</i></h1>
-        <fieldset>
-            <form method="POST" >
-            
+        <h1 style="text-align: center;"><i>Multiplication calculator</i></h1>
+        <hr>
+        <feildset>
+            <form method="POST">
+
                 <label>Enter 1st number:</label><br>
                 <input type="number" name="num1" required><br><br>
                 <label>Enter 2nd number:</label><br>
                 <input type="number" name="num2" required><br><br>
                 <button type="submit">Calculate</button>
-
+                
                 <a href="http://127.0.0.1:5000">
                     <button type="button">Back</button>
                 </a>
@@ -29,6 +30,7 @@
             {% if error %}
                 <h3>{{error}}</h3>
             {% endif %}
-        </fieldset>
+        <br><br>
+        </feildset>
     </body>
 </html>

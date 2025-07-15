@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Cut off calculator</title>
+</head>
+    <body>
+
+        <h1 style="text-align: center;"><i>Cut off calculator</h1></i>
+        <hr>
+        <feildset>
+            <form method="POST">
+                <label>Enter MATHEMATICS mark</label><br>
+                <input type="number" name="math" required><br><br>
+                <label>Enter PHYSICS mark</label><br>
+                <input type="number" name="phy" required><br><br>
+                <label>Enter CHEMISTRY mark</label><br>
+                <input type="number" name="chem" required><br><br>
+
+                <button type="submit">Calculate</button>
+                <a href="http://127.0.0.1:5000">
+                    <button type="button">Back</button>
+                </a>
+            </form><br>
+            {% if result %}
+                <h3>{{result}}</h3>
+            {% endif %}
+
+            {% if error %}
+                <h3>{{error}}</h3>
+            {% endif %}<br><br>
+        
+
+
+        </feildset>
+    </body>
+</html>
