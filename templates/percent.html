@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Percentage calculator</title>
+</head>
+    <body>
+        <h2 style="text-align: center;"><i>Calculate your percentage</h2></i>
+        <hr>
+        <feildset>
+            <form method="POST">
+                <label>Enter obtained marks</label><br>
+                <input type="number" name="obtained" required><br><br>
+                <label>Enter total marks</label><br>
+                <input type="number" name="total" required><br><br>
+                <button type="submit">Calculate</button>
+
+                 <a href="http://127.0.0.1:5000">
+                    <button type="button">Back</button>
+                </a>
+            </form>
+
+            {% if result %}
+                <h3>{{result}}</h3>
+            {% endif %}
+
+            {% if error %}
+                <h3>{{error}}</h3>
+            {% endif %}
+        </feildset>
+    </body>
+</html>
